@@ -3,15 +3,14 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: rgb(11, 134, 134);
+    background-color: rgba(49, 28, 241, 0.523);
 }
 
 
 .container {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .box {
@@ -80,5 +79,29 @@ body{
 
     100%{
         opacity: 0;
+    }
+}
+
+.around{
+    position: relative;
+    margin-top: 200px;
+    margin-right: 500px;
+}
+
+.earth {
+    position: absolute;
+}
+
+.moon {
+    position: absolute;
+    animation: AroundEarth 10s linear infinite;
+}
+
+@keyframes AroundEarth {
+    from {
+        transform: rotate(0deg) translateX(60px); 
+    }
+    to {
+        transform: rotate(360deg) translateX(60px); 
     }
 }
