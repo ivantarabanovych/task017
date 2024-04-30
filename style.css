@@ -55,11 +55,11 @@ body{
 
 @keyframes color {
     from {
-      color: #fffcfc;
+      color: #f6ff00;
     }
 
     to {
-      color: #0fb403;
+      color: #a75f02;
     }
   }
 
@@ -85,7 +85,7 @@ body{
 .around{
     position: relative;
     margin-top: 200px;
-    margin-right: 500px;
+    margin-right: 900px;
 }
 
 .earth {
@@ -103,5 +103,35 @@ body{
     }
     to {
         transform: rotate(360deg) translateX(60px); 
+    }
+}
+
+
+.rectangle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 800px;
+    margin-top: 150px;
+    position: absolute;
+    background-image: linear-gradient(to bottom left, rgb(247, 6, 6), rgb(255, 247, 6));
+    transition: all 0.3s ease;
+    animation: WidthHeight;
+    animation-duration: 4s; 
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+@keyframes WidthHeight{
+    from{
+        width: 200px;
+        height: 200px;
+    }
+
+    to{
+        width: 300px;
+        height: 300px; 
     }
 }
