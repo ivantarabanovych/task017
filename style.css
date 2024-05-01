@@ -8,7 +8,7 @@ body{
 
 
 .container {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
 }
@@ -133,5 +133,27 @@ body{
     to{
         width: 300px;
         height: 300px; 
+    }
+}
+
+.car{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: go-right 6s infinite alternate;
+}
+
+@keyframes go-right {
+    100% {
+        transform: rotateY(180deg);
+    }
+
+    from{
+        left: 50px;
+    }
+
+    to{
+        left: calc(100% - 150px); 
     }
 }
